@@ -243,6 +243,44 @@ cp -r dist/* ../Travel_frontend/public/admin/
 
 ---
 
+## 🖥️ Quick Setup (Bash Commands)
+
+Copy and run these commands in Git Bash or terminal:
+
+```bash
+# Clone repository
+git clone https://github.com/Venkatareddy26/travel-123.git
+cd travel-123
+
+# Database setup
+psql -U postgres -c "CREATE DATABASE corporate_travel;"
+psql -U postgres -d corporate_travel -f Travel_backend/db/db_dump.sql
+
+# Backend setup
+cd Travel_backend
+npm install
+cat > .env << EOF
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_NAME=corporate_travel
+PORT=5000
+JWT_SECRET=mysecretkey123
+EOF
+npm start
+
+# Frontend setup (open new terminal)
+cd Travel_frontend
+npm install
+npm start
+
+# Open browser: http://localhost:3000/login
+# Login: admin@corp.com / admin123
+```
+
+---
+
 ## 🔧 Troubleshooting
 
 **Database Connection Error:**
