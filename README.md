@@ -122,8 +122,8 @@ Corporate-Travel-Management/
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/Venkatareddy26/travel-123.git
-cd travel-123
+git clone https://github.com/Venkatareddy26/Corporate-Travel-policy-Tool.git
+cd Corporate-Travel-policy-Tool
 ```
 
 ### Step 2: Database Setup
@@ -249,8 +249,8 @@ Copy and run these commands in Git Bash or terminal:
 
 ```bash
 # Clone repository
-git clone https://github.com/Venkatareddy26/travel-123.git
-cd travel-123
+git clone https://github.com/Venkatareddy26/Corporate-Travel-policy-Tool.git
+cd Corporate-Travel-policy-Tool
 
 # Database setup
 psql -U postgres -c "CREATE DATABASE corporate_travel;"
