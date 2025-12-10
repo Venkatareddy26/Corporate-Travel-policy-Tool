@@ -61,7 +61,7 @@ Corporate-Travel-policy-Tool/
 - PostgreSQL v12+
 - Git Bash (Windows) or Terminal (Mac/Linux)
 
-### Bash Commands
+### Git Bash / Mac Terminal
 
 ```bash
 # 1. Clone repository
@@ -79,6 +79,29 @@ node seed.js
 npm start
 
 # 4. Frontend setup (new terminal)
+cd Travel_frontend
+npm install
+npm start
+```
+
+### VS Code Terminal (PowerShell/CMD)
+
+```powershell
+# 1. Clone repository
+git clone https://github.com/Venkatareddy26/Corporate-Travel-policy-Tool.git
+cd Corporate-Travel-policy-Tool
+
+# 2. Database setup (run in psql or pgAdmin)
+# CREATE DATABASE corporate_travel;
+# Then import: Travel_backend/db/db_dump.sql
+
+# 3. Backend setup
+cd Travel_backend
+npm install
+node seed.js
+npm start
+
+# 4. Frontend setup (open new terminal: Ctrl+Shift+`)
 cd Travel_frontend
 npm install
 npm start
